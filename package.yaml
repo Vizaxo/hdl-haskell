@@ -9,11 +9,19 @@ extra-source-files:
 
 dependencies:
 - base >= 4.7 && < 5
+- mtl
 
 library:
   source-dirs: src
   ghc-options:
   - -O2
+
+default-extensions:
+- DataKinds
+- KindSignatures
+- ConstraintKinds
+- FlexibleContexts
+- MultiParamTypeClasses
 
 executables:
   hdl-haskell-exe:
