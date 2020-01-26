@@ -32,7 +32,7 @@ notGate :: MonadHDL m => Wire -> Wire -> m ()
 notGate i o = nand i i o
 
 data WireState = High | Low | Undefined
-  deriving Show
+  deriving (Eq, Show)
 
 data RunState = RunState
   { _wires :: Map Word WireState
