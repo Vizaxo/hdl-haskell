@@ -10,6 +10,8 @@ extra-source-files:
 dependencies:
 - base >= 4.7 && < 5
 - mtl
+- lens
+- containers
 
 library:
   source-dirs: src
@@ -22,6 +24,7 @@ default-extensions:
 - ConstraintKinds
 - FlexibleContexts
 - MultiParamTypeClasses
+- TemplateHaskell
 
 executables:
   hdl-haskell-exe:
